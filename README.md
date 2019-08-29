@@ -7,3 +7,6 @@ Import-cert.sh - Importa o certificado de uma página WEB e envia para seu Cacer
 
 
 New-Import-cert.sh - Importa o certificado de uma página WEB e o deixa localmente no diretório em que foi executado o script, além disso o mesmo compara o certificado com outro certificado para garantir que é o mesmo.
+
+
+onlyimportcert - Somente importa o certificado de uma página WEB.
