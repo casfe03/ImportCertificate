@@ -13,7 +13,7 @@ for key in ${!HOSTS[@]}; do
     echo importando ${key} ${HOSTS[${key}]} ...
     openssl s_client -servername ${key} -connect ${HOSTS[${key}]}:443 </dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' >${key}.pem
 
-	echo comparando os dois arquivos 
-	$some_var="$(diff "${key}.pem" "cnj2.pem")"
-	echo $some_var 
+    echo comparando os dois arquivos 
+    $some_var="$(diff "${key}.pem" "cnj2.pem")"
+    echo $some_var 
 done
